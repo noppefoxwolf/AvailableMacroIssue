@@ -3,7 +3,7 @@ import SwiftSyntax
 import SwiftSyntaxBuilder
 import SwiftSyntaxMacros
 
-enum BackwardCompatibleBodyMacro: PeerMacro {
+enum BackwardCompatibleMacro: PeerMacro {
   static func expansion(
     of node: SwiftSyntax.AttributeSyntax,
     providingPeersOf declaration: some SwiftSyntax.DeclSyntaxProtocol,
@@ -30,6 +30,6 @@ enum BackwardCompatibleBodyMacro: PeerMacro {
 @main
 struct AvailableMacroIssuePlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
-        BackwardCompatibleBodyMacro.self,
+        BackwardCompatibleMacro.self,
     ]
 }

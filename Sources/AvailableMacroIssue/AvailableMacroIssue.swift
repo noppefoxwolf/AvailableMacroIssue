@@ -1,2 +1,2 @@
 @attached(peer, names: arbitrary)
-public macro BackwardCompatibleBody() = #externalMacro(module: "AvailableMacroIssueMacros", type: "BackwardCompatibleBodyMacro")
+public macro BackwardCompatible() = #externalMacro(module: "AvailableMacroIssueMacros", type: "BackwardCompatibleMacro")

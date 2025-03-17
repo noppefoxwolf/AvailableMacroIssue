@@ -12,7 +12,7 @@ struct Value2 {
 
 struct Version {
     
-    @BackwardCompatibleBody
+    @BackwardCompatible
     var _value: String {
         value(.init())
     }
