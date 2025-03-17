@@ -3,7 +3,7 @@
 When you use macros to generate code that contains method overrides, type inference results will be different than if you unfold it manually.
 
 
-```
+```swift
 @available(*, deprecated)
 struct Value1 {
     let text: String = "macOS 14"
@@ -17,7 +17,8 @@ struct Value2 {
 
 
 ## with Macro
-```
+
+```swift
 struct Version {
     
     @BackwardCompatibleBody
@@ -40,7 +41,8 @@ print(Version().version) // macOS 14
 ```
 
 ## Inlined macro
-```
+
+```swift
 struct Version {
     
     
